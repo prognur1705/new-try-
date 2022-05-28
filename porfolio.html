@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  NUR HOSSEN | Profetional Web Dev
+    </title>
+
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+        body{
+            background-image: linear-gradient(transparent ,  rgb(10, 169, 209) );
+            background-color: transparent;
+            width: 100%;
+            height: 100vh;
+        }
+      
+    
+        .form{
+
+                color: lightslategray;
+                width: 400px;
+                height: 440px;
+                position: absolute;
+                top: 30%;
+                left: 56%;
+
+                border: 2px solid black;
+                border-radius: 9px;
+                box-shadow: 2px 2px 5px 5px rgb(104, 110, 122);
+                padding: 5px 5px 10px 10px;
+                word-spacing:  3px;
+                column-gap:  20px;
+
+            }
+        form input  {
+            margin-top:10px;
+            margin-bottom: 10px;
+            width: 100% ;
+            height: 30px;
+            border-radius: 5px;
+
+
+        }
+        #lbtn{
+        letter-spacing: 0.5px;
+        width: 90px;
+        height: 30px;
+        background: white;
+        margin-right: 60%;
+        border-radius: 5px;
+        font-size: 12px;
+        transition: 0.5s;
+}
+    #lbtn:hover 
+{
+    background: blue;
+    color: white;
+    box-shadow: 0px 0px 20px rgb(20, 20, 159);
+
+}
+
+
+.loder{
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent , #0002 );
+
+
+}
+.loder ::before 
+{
+    content: '';
+    position:absolute;
+    top: 0;
+    right: 0;
+    
+    width: 2px;
+    height: 100%;
+    background: #03e9f4;
+    animation: blinkcursor 0.8s steps(3) infinite;
+
+}
+@keyframes blinkcursor
+ {
+      0%,75% {
+     width: 0;
+ }
+    76%,100%{
+        width:756px;
+    }
+
+
+}
+ 
+
+.loder h1 {
+
+
+    margin-top: 45%;
+    margin-right: 20px;
+    position:relative;
+    color:#03e9f4;
+    letter-spacing: 6px;
+    font-size: 2em;
+    animation: slide 5s steps(10) infinite;
+    overflow: hidden;
+}
+@keyframes slide 
+{  0% , 90% , 100% {
+    width: 0% ;
+}
+30%, 90% {
+     width: 501px;
+ }
+}
+
+
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <div class="loder">
+  
+        <h1> LOADING...progNUR </h1>
+        
+     </div>
+     
+
+ <div   class="form"> 
+     <form  action="login">
+    <h2>WELCOME </h2>
+    <hr>
+    <label for=""> Email or Phone<br>
+    <input type="email" name="" id="email" placeholder="email or phone number">
+</label> <br>
+<label for="pass"> Password <br>
+    <input type="password" name="pass" id="pass" placeholder="Password">
+
+</label> <br>
+
+<button id="lbtn"> Log In</button>
+
+
+
+</form></div>
+    
+</body>
+</html>

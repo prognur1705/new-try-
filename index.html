@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>digital clock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Serif:wght@100&display=swap" rel="stylesheet">
+    
+
+
+
+
+    <style> 
+
+        body{
+            background: rgba(29, 163, 216, 0.616);
+        }
+     #clkdigital{ 
+          color: antiquewhite;
+          position: absolute ;
+            top : 20% ;
+            left : 2
+         width: 400px;
+         height: 400px;
+         border: 2px solid black;
+         padding:  20% ;
+         font-size: 30px;
+            
+        
+         font-weight: 900;
+
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <p>clock </p>
+    <div id="clkdigital">
+      
+    </div>
+    
+    
+    
+    <script>
+        function showTime(){
+            var date =new Date();
+            var h= date.getHours();
+            if ( h== 0){
+                h =12 ;
+            }
+            if ( h> 12){
+                h= h-12 ;
+            } if(h < 10){
+                h= "0" + h ;
+            } 
+
+
+            var m = date.getMinutes();
+
+            var s = date.getSeconds();
+            if ( s<10){
+                s= "0"+ s ;
+            }
+
+            var time = h + ":" + m + ":" + s ;
+            document.getElementById("clkdigital").innerHTML = time ;
+
+        }
+        setInterval(showTime, 1000);
+    </script>
+    
+</body>
+</html>
